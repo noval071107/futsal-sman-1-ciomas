@@ -1,0 +1,338 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+  futsal smancis
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <header class="bg-green-700 text-white shadow-md">
+   <div class="container mx-auto flex items-center justify-between p-4">
+    <div class="flex items-center space-x-3">
+     <img alt="Logo Futsal Sekolah, a green and white shield with a soccer ball and school building" class="w-12 h-12 rounded" height="48" src="logo futsal.jpeg" width="48"/>
+     <h1 class="text-2xl font-semibold">
+      Futsal Sma Negeri 1 Ciomas
+     </h1>
+    </div>
+    <nav>
+     <ul class="hidden md:flex space-x-8 font-semibold">
+      <li>
+       <a class="hover:text-yellow-400 transition" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-yellow-400 transition" href="#about">
+        Tentang
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-yellow-400 transition" href="#jadwal">
+        Jadwal
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-yellow-400 transition" href="#lapangan">
+        Lapangan
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-yellow-400 transition" href="#galeri">
+        Galeri
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-yellow-400 transition" href="#kontak">
+        Kontak
+       </a>
+      </li>
+     </ul>
+     <button aria-label="Toggle menu" class="md:hidden focus:outline-none focus:ring-2 focus:ring-yellow-400" id="menu-btn">
+      <i class="fas fa-bars text-2xl">
+      </i>
+     </button>
+    </nav>
+   </div>
+   <div class="hidden md:hidden bg-green-600" id="mobile-menu">
+    <ul class="flex flex-col p-4 space-y-3 font-semibold">
+     <li>
+      <a class="block hover:text-yellow-300 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-300 transition" href="#about">
+       Tentang
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-300 transition" href="#jadwal">
+       Jadwal
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-300 transition" href="#lapangan">
+       Lapangan
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-300 transition" href="#galeri">
+       Galeri
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-300 transition" href="#kontak">
+       Kontak
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main>
+   <section class="relative bg-green-700 text-white flex flex-col justify-center items-center text-center min-h-[70vh] px-6" id="home">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">
+     Selamat Datang di Futsal Sma Negeri 1 Ciomas
+    </h2>
+    <p class="max-w-xl text-lg md:text-xl mb-8 drop-shadow-md">
+     Tempat terbaik untuk bermain futsal dan mengembangkan bakat olahraga di lingkungan sekolah.
+    </p>
+    <a class="inline-block bg-yellow-400 text-green-900 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-300 transition" href="#jadwal">
+     Lihat Jadwal
+    </a>
+    <img alt="An action shot of students playing futsal in a school gymnasium with bright lighting and cheering crowd" class="mt-10 rounded-lg shadow-lg max-w-full h-auto" height="300" src="lat 2.jpeg" width="600"/>
+   </section>
+   <section class="container mx-auto px-6 py-16" id="about">
+    <h3 class="text-3xl font-semibold text-center mb-8 text-green-800">
+     Tentang Futsal Sman 1 ciomas
+    </h3>
+    <div class="flex flex-col md:flex-row md:space-x-12 items-center">
+     <img alt="Indoor futsal court with students warming up and coaches giving instructions" class="rounded-lg shadow-lg w-full md:w-1/2 mb-8 md:mb-0" height="300" src="lat 1.jpeg" width="400"/>
+     <div class="md:w-1/2 text-gray-700 text-lg leading-relaxed">
+      <p class="mb-4">
+       Futsal sman 1 ciomas adalah program olahraga yang bertujuan untuk mengembangkan kemampuan futsal siswa
+            melalui latihan rutin, pertandingan, dan kegiatan kompetitif lainnya. Kami menyediakan fasilitas
+            lapangan futsal yang modern dan pelatih berpengalaman untuk mendukung perkembangan bakat setiap siswa.
+      </p>
+      <p>
+       Bergabunglah dengan kami untuk meningkatkan kebugaran, kerja sama tim, dan semangat sportivitas di
+            lingkungan sekolah.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="bg-green-50 py-16 px-6" id="jadwal">
+    <div class="container mx-auto max-w-5xl">
+     <h3 class="text-3xl font-semibold text-center text-green-800 mb-12">
+      Jadwal Latihan dan Pertandingan
+     </h3>
+     <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-lg shadow-md">
+       <thead class="bg-green-700 text-white">
+        <tr>
+         <th class="py-3 px-6 text-left">
+          Hari
+         </th>
+         <th class="py-3 px-6 text-left">
+          Waktu
+         </th>
+         <th class="py-3 px-6 text-left">
+          Kegiatan
+         </th>
+         <th class="py-3 px-6 text-left">
+          Tempat
+         </th>
+        </tr>
+       </thead>
+       <tbody class="divide-y divide-green-200">
+        <tr class="hover:bg-green-100 transition">
+         <td class="py-4 px-6">
+          Selasa
+         </td>
+         <td class="py-4 px-6">
+          15:30 - 17:30
+         </td>
+         <td class="py-4 px-6">
+          Latihan Futsal
+         </td>
+         <td class="py-4 px-6">
+          Lapangan Outdoor Sekolah
+         </td>
+        </tr>
+        <tr class="hover:bg-green-100 transition">
+         <td class="py-4 px-6">
+          Kamis
+         </td>
+         <td class="py-4 px-6">
+          15:30 - 17:30
+         </td>
+         <td class="py-4 px-6">
+          Latihan Futsal
+         </td>
+         <td class="py-4 px-6">
+          Lapangan Outdoor Sekolah
+         </td>
+        </tr>
+        <tr class="hover:bg-green-100 transition">
+         <td class="py-4 px-6">
+          
+         </td>
+         <td class="py-4 px-6">
+          
+         </td>
+         <td class="py-4 px-6">
+          
+         </td>
+         <td class="py-4 px-6">
+          
+         </td>
+        </tr>
+        <tr class="hover:bg-green-100 transition">
+         <td class="py-4 px-6">
+          
+         </td>
+         <td class="py-4 px-6">
+         
+         </td>
+         <td class="py-4 px-6">
+         
+         </td>
+         <td class="py-4 px-6">
+          
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </section>
+   <section class="container mx-auto px-6 py-16" id="lapangan">
+    <h3 class="text-3xl font-semibold text-center text-green-800 mb-12">
+     Fasilitas Lapangan Futsal
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Indoor futsal court with wooden floor and bright LED lighting" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/b3e1c870-9d9f-43d5-47a9-d062ca9a9e4c.jpg" width="400"/>
+      <div class="p-4">
+       <h4 class="font-semibold text-lg mb-2">
+        Lapangan Indoor Modern
+       </h4>
+       <p class="text-gray-600 text-sm">
+        Lapangan futsal indoor dengan lantai kayu berkualitas dan pencahayaan LED yang terang untuk
+              kenyamanan bermain.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Changing rooms with lockers and showers for players" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/bf941437-cb83-458d-a430-d98664c1d2d9.jpg" width="400"/>
+      <div class="p-4">
+       <h4 class="font-semibold text-lg mb-2">
+        Ruang Ganti dan Shower
+       </h4>
+       <p class="text-gray-600 text-sm">
+        Fasilitas ruang ganti lengkap dengan loker dan shower untuk kenyamanan para pemain sebelum dan
+              sesudah latihan.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Spectator seating area with benches and shade near the futsal court" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/bdefe0f6-5bc4-42bf-043c-644c88fcfd57.jpg" width="400"/>
+      <div class="p-4">
+       <h4 class="font-semibold text-lg mb-2">
+        Area Penonton
+       </h4>
+       <p class="text-gray-600 text-sm">
+        Area khusus untuk penonton dengan bangku dan naungan agar dapat menikmati pertandingan dengan
+              nyaman.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="bg-green-50 py-16 px-6" id="galeri">
+    <div class="container mx-auto max-w-6xl">
+     <h3 class="text-3xl font-semibold text-center text-green-800 mb-12">
+      Galeri Foto Kegiatan
+     </h3>
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img alt="Students playing futsal with intense focus and team spirit on an indoor court" class="rounded-lg shadow-md object-cover w-full h-60" height="300" src="tur 1.jpeg" width="400"/>
+      <img alt="Coach giving instructions to players during futsal practice on the court" class="rounded-lg shadow-md object-cover w-full h-60" height="300" src="tur 2.jpeg" width="400"/>
+      <img alt="Team photo of futsal players wearing school uniforms holding trophies and medals" class="rounded-lg shadow-md object-cover w-full h-60" height="300" src="tur 3.jpeg" width="400"/>
+      <img alt="Students warming up before futsal match in school gymnasium with coaches supervising" class="rounded-lg shadow-md object-cover w-full h-60" height="300" src="tur 4.jpeg" width="400"/>
+      <img alt="Action shot of goalkeeper making a save during futsal game in school gym" class="rounded-lg shadow-md object-cover w-full h-60" height="300" src="tur 5.jpeg" width="400"/>
+      <img alt="Cheering crowd of students and teachers watching futsal match in school gymnasium" class="rounded-lg shadow-md object-cover w-full h-60" height="300" src="tur 7.jpeg" width="400"/>
+     </div>
+    </div>
+   </section>
+   <section class="container mx-auto px-6 py-16" id="kontak">
+    <h3 class="text-3xl font-semibold text-center text-green-800 mb-12">
+     Kontak Kami
+    </h3>
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
+     <form action="#" class="space-y-6" method="POST">
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="name">
+        Nama Lengkap
+       </label>
+       <input class="w-full border border-green-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="email">
+        Email
+       </label>
+       <input class="w-full border border-green-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" id="email" name="email" placeholder="Masukkan email Anda" required="" type="email"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="message">
+        Pesan
+       </label>
+       <textarea class="w-full border border-green-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" id="message" name="message" placeholder="Tulis pesan Anda di sini" required="" rows="4"></textarea>
+      </div>
+      <button class="bg-green-700 text-white font-bold px-6 py-3 rounded-md hover:bg-green-800 transition w-full" type="submit">
+       Kirim Pesan
+      </button>
+     </form>
+     <div class="mt-10 text-center text-gray-600">
+      <p>
+       <i class="fas fa-phone-alt mr-2 text-green-700">
+       </i>
+       
+      </p>
+      <p>
+       <i class="fas fa-envelope mr-2 text-green-700">
+       </i>
+       futsalsman1ciomas@gmail.com
+      </p>
+      <p>
+       <i class="fas fa-map-marker-alt mr-2 text-green-700">
+       </i>
+        Jl. Raya Ciomas Cibinong, Sukaharja, Kec. Ciomas, Kabupaten Bogor, Jawa Barat
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-green-700 text-white py-6 mt-12">
+   <div class="container mx-auto text-center text-sm">
+    © 2025 Futsal Sman 1 ciomas. Semua hak cipta dilindungi.
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
